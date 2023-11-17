@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ejercicio26</title>
+    <style>
+        .lin {
+            display: inline-block;
+            padding: 5px;
+        }
+
+        .bloque {
+            display: block;
+        }
+
+        li {
+            list-style: none;
+        }
+
+        .c1 {
+            background-color: lightgray;
+            border: solid black 2px;
+            padding-right: 50px;
+        }
+
+        .c2 {
+            background-color: lightyellow;
+            border: solid black 2px;
+            padding-right: 50px;
+        }
+
+        .c3 {
+            background-color: lightcoral;
+            border: solid black 2px;
+            padding-right: 50px;
+        }
+
+        div {
+            margin: 2px;
+        }
+
+        label {
+            font-size: small;
+        }
+
+        fieldset legend {
+            background-color: white;
+            border: solid 2px black;
+            width: fit-content;
+        }
+
+        fieldset {
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>HOJA DE INSCRIPCIÓN</h1>
+    <h1>EN CICLOS DE GRADO SUPERIOR</h1>
+
+    <fieldset class="c1">
+        <legend class="l1">DATOS PERSONALES</legend>
+        <div>
+            <div class="lin">
+                <label>NOMBRE :</label>
+                <input type="text" class="bloque" name="nombre1">
+            </div>
+            <div class="lin">
+                <label>APELLIDOS :</label>
+                <input type="text" class="bloque" name="apellidos">
+            </div>
+            <div class="lin">
+                <label>DNI :</label>
+                <input type="text" class="bloque" name="dni">
+            </div>
+        </div>
+        <div>
+            <div class="lin">
+                <label>LOCALIDAD DE NACIMIENTO :</label>
+                <input type="text" class="bloque" name="localidad">
+            </div>
+            <div class="lin">
+                <label>PROVINCIA :</label>
+                <select class="bloque" name="provincia">
+                    <option value="granada">Granada</option>
+                    <option value="almeria">Almería</option>
+                    <option value="malaga">Málaga</option>
+                </select>
+            </div>
+            <div class="lin">
+                <label>FECHA NACIMIENTO :</label>
+                <input type="date" class="bloque" name="dni">
+            </div>
+        </div>
+        <div>
+            <div class="lin">
+                <label>DIRECCIÓN :</label>
+                <input type="text" class="bloque" name="direccion">
+            </div>
+            <div class="lin">
+                <label class="postal">CÓDIGO POSTAL :</label>
+                <input type="text" class="bloque" name="postal">
+            </div>
+        </div>
+    </fieldset>
+
+    <fieldset class="c2">
+        <legend>Forma de acceso</legend>
+        <ul>
+            <li>
+                <input type="radio">
+                <label>Direct</label>
+            </li>
+
+            <ul>
+                <li>
+                    <input type="radio">
+                    <label>Bachillerato LOGSE modalidad: </label>
+                    <input type="text" class="lin">
+                </li>
+                <li>
+                    <input type="radio">
+                    <label>Bachillerato experimental</label>
+                </li>
+                <li>
+                    <input type="radio">
+                    <label>COU Opción: </label>
+                    <input type="text" class="lin">
+                </li>
+                <li>
+                    <input type="radio">
+                    <label>FPD 2 </label>
+                </li>
+                <li>
+                    <input type="radio">
+                    <label>Otros : </label>
+                    <input type="text" class="lin">
+                </li>
+            </ul>
+            <li>
+                <input type="radio">
+                <label>Prueba libre: </label>
+            </li>
+
+        </ul>
+    </fieldset>
+
+
+    <fieldset class="cuadro3">
+        <legend>Documentos adjuntados</legend>
+        <div class="linea">
+            <input type="checkbox">
+            <label>Fotocopia DNI</label>
+        </div>
+
+        <div class="linea">
+            <input type="checkbox">
+            <label>Certíficado Académica</label>
+        </div>
+        <div class="bloque">
+            <input type="checkbox">
+            <label>Otros documentos: </label>
+            <input type="text">
+        </div>
+    </fieldset>
+    <input type="submit" name="enviar" id="Enviar">
+</body>
+
+</html>

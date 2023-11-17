@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ejercicio10</title>
+  <style>
+    .rectangulo {
+      width: 300px;
+      height: 200px;
+      margin: 50px auto;
+      position: relative;
+      transform: rotate(50deg);
+      background: url('https://i.pinimg.com/564x/51/fc/c6/51fcc61ed5ecf208b9c3627fc4d4f438.jpg') no-repeat, url('https://i.pinimg.com/564x/ee/6c/df/ee6cdf80b086d6cd6a639c3e349fc117.jpg') no-repeat;
+      background-size: cover, auto;
+      color: white;
+      text-align: center;
+      line-height: 200px;
+      font-size: 20px;
+    }
+
+    .rectangulo::before {
+      content: "Texto Superpuesto";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: rgba(0, 0, 0, 0.5);
+      z-index: 1;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="rectangulo"></div>
+</body>
+
+</html>

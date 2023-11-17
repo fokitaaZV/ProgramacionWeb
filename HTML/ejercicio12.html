@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulario 12</title>
+  </head>
+  <body>
+    <form>
+      <label for="fecha">Fecha:</label>
+      <input type="date" id="fecha" name="fecha" /><br /><br />
+
+      <label for="archivos">Elegir archivos:</label>
+      <input type="file" id="archivos" name="archivos" /><br /><br />
+
+      <label>Procesador:</label><br />
+      <input
+        type="radio"
+        id="procesadoramd"
+        name="procesador"
+        value="procesadoramd"
+      />
+      <label for="procesadoramd">AMD</label><br />
+      <input
+        type="radio"
+        id="procesadorintel_i5"
+        name="procesador"
+        value="procesadorintel_i5"
+      />
+      <label for="procesadorintel_i5">Intel i5</label><br />
+      <input
+        type="radio"
+        id="procesadorintel_i7"
+        name="procesador"
+        value="procesadorintel_i7"
+      />
+      <label for="procesadorintel_i7">Intel i7</label><br /><br />
+
+      <label>Asignatura:</label><br />
+      <input
+        type="radio"
+        id="asignaturamatematicas"
+        name="asignatura"
+        value="asignaturamatematicas"
+      />
+      <label for="asignaturamatematicas">Matemáticas</label><br />
+      <input
+        type="radio"
+        id="asignaturahistoria"
+        name="asignatura"
+        value="asignaturahistoria"
+      />
+      <label for="asignaturahistoria">Historia</label><br />
+      <input
+        type="radio"
+        id="asignaturageografia"
+        name="asignatura"
+        value="asignaturageografia"
+      />
+      <label for="asignaturageografia">Geografía</label><br />
+      <input
+        type="radio"
+        id="asignaturalengua"
+        name="asignatura"
+        value="asignaturalengua"
+      />
+      <label for="asignaturalengua">Lengua</label><br /><br />
+
+      <label for="nombre">Nombre:</label>
+      <input type="text" id="nombre" name="nombre" /><br /><br />
+
+      <label for="apellidos">Apellidos:</label>
+      <input type="text" id="apellidos" name="apellidos" /><br /><br />
+
+      <label for="direccion">Dirección:</label>
+      <input type="text" id="direccion" name="direccion" /><br /><br />
+
+      <label for="color">Elegir color:</label>
+      <input type="color" id="color" name="color" /><br /><br />
+
+      <label for="texto">Textarea:</label><br />
+      <textarea id="texto" name="texto" rows="6" cols="59">
+Utilice este cuadro para escribir</textarea
+      ><br /><br />
+
+      <label for="idioma">Idioma:</label>
+      <select id="idioma" name="idioma">
+        <option value="ingles">Inglés</option>
+        <option value="aleman">Alemán</option>
+        <option value="frances">Francés</option></select
+      ><br /><br />
+
+      <label for="hora">Hora:</label>
+      <input type="time" id="hora" name="hora" /><br /><br />
+
+      <label for="archivos2">Elegir archivos:</label>
+      <input type="file" id="archivos2" name="archivos2" /><br /><br />
+
+      <label>Sexo:</label><br />
+      <input type="checkbox" id="sexomujer" name="sexo" value="sexomujer" />
+      <label for="sexomujer">Mujer</label><br />
+      <input type="checkbox" id="sexohombre" name="sexo" value="sexohombre" />
+      <label for="sexohombre">Hombre</label><br /><br />
+
+      <input type="submit" value="Enviar" />
+    </form>
+  </body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ejercicio10</title>
+  <style>
+    .img {
+      background: url('https://i.pinimg.com/564x/51/fc/c6/51fcc61ed5ecf208b9c3627fc4d4f438.jpg') no-repeat;
+      background-size: cover;
+      width: 100%;
+      height: 300px;
+      position: relative;
+    }
+
+    .logo {
+      position: absolute;
+    }
+
+    .logo:nth-child(1) {
+      left: 10px;
+      top: 50px;
+      width: 30px;
+      height: 30px;
+      transform: scale(0.5);
+    }
+
+    .logo:nth-child(2) {
+      left: 50%;
+      top: 50px;
+      transform: translateX(-50%) scale(0.7);
+    }
+
+    .logo:nth-child(3) {
+      right: 10px;
+      top: 50px;
+      width: 100px;
+      height: 100px;
+      transform: scale(1);
+    }
+  </style>
+</head>
+
+<body>
+  <div class="img">
+    <div class="logo"
+      style="background: url('https://i.pinimg.com/564x/ee/6c/df/ee6cdf80b086d6cd6a639c3e349fc117.jpg') no-repeat center/contain;">
+    </div>
+    <div class="logo"
+      style="background: url('https://i.pinimg.com/564x/ee/6c/df/ee6cdf80b086d6cd6a639c3e349fc117.jpg') no-repeat center/contain;">
+    </div>
+    <div class="logo"
+      style="background: url('https://i.pinimg.com/564x/ee/6c/df/ee6cdf80b086d6cd6a639c3e349fc117.jpg') no-repeat center/contain;">
+    </div>
+  </div>
+</body>
+
+</html>
